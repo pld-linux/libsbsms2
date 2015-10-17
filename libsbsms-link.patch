@@ -1,18 +1,10 @@
---- libsbsms-2.0.1/src/Makefile.am.orig	2013-06-09 06:47:10.148461222 +0200
-+++ libsbsms-2.0.1/src/Makefile.am	2013-06-09 06:53:36.198453175 +0200
-@@ -4,4 +4,5 @@
+--- libsbsms-2.0.2/src/Makefile.am.orig	2015-10-17 11:02:58.514398687 +0200
++++ libsbsms-2.0.2/src/Makefile.am	2015-10-17 11:03:59.017730759 +0200
+@@ -4,6 +4,7 @@
  libsbsmsinclude_HEADERS = ../include/sbsms.h
  
  lib_LTLIBRARIES = libsbsms.la
 +libsbsms_la_LIBADD = -lpthread
- libsbsms_la_SOURCES = sms.cpp track.cpp trackpoint.cpp resample.cpp sbsms.cpp fft.cpp grain.cpp buffer.cpp subband.cpp dBTable.cpp buffer.h fft.h sse.h utils.h trackpoint.h grain.h real.h synthTable.h dBTable.h sincCoeffs.h ../include/sbsms.h sms.h subband.h track.h slide.cpp
---- libsbsms-2.0.1/test/src/Makefile.am.orig	2012-07-06 08:17:37.000000000 +0200
-+++ libsbsms-2.0.1/test/src/Makefile.am	2013-06-22 10:31:03.160422438 +0200
-@@ -3,6 +3,7 @@
- lib_LTLIBRARIES = libsbsmsx.la
- 
- libsbsmsx_la_SOURCES = mp3.cpp mp3.h mp3tech.cpp mp3tech.h import.cpp import.h pcm.cpp pcm.h convert.cpp convert.h audiobuffer.cpp audiobuffer.h
-+libsbsmsx_la_LIBADD = $(SBSMS_LIBS) $(SNDFILE_LIBS) $(MAD_LIBS)
- 
- bin_PROGRAMS = sbsms
- 
+ libsbsms_la_SOURCES = \
+ 	sms.cpp \
+ 	track.cpp \

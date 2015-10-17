@@ -1,31 +1,10 @@
---- libsbsms-1.7.0/src/buffer.h.orig	2008-11-02 02:58:45.000000000 +0100
-+++ libsbsms-1.7.0/src/buffer.h	2011-05-06 21:36:16.969710909 +0200
-@@ -6,6 +6,8 @@
+--- libsbsms-2.0.2/src/buffer.h.orig	2014-06-11 23:20:40.000000000 +0200
++++ libsbsms-2.0.2/src/buffer.h	2015-10-17 10:29:11.717774265 +0200
+@@ -6,6 +6,7 @@
  #include "grain.h"
- #include "trackpoint.h"
+ #include <stdlib.h>
  #include <list>
-+#include <cstdlib>
 +#include <cstring>
  using namespace std;
  
  namespace _sbsms_ {
---- libsbsms-2.0.1/test/src/mp3.cpp.orig	2012-07-06 08:17:37.000000000 +0200
-+++ libsbsms-2.0.1/test/src/mp3.cpp	2013-06-22 09:36:26.733893269 +0200
-@@ -6,6 +6,7 @@
- #include <sys/stat.h>
- #include <iostream>
- #include <fstream>
-+#include <cstring>
- #include <assert.h>
- 
- enum {
---- libsbsms-2.0.1/test/src/convert.cpp.orig	2012-07-06 08:17:37.000000000 +0200
-+++ libsbsms-2.0.1/test/src/convert.cpp	2013-06-22 10:10:28.343807591 +0200
-@@ -5,6 +5,7 @@
- #include "mp3.h"
- #include "real.h"
- #include <stdlib.h>
-+#include <string.h>
- #include <algorithm>
- #include "import.h"
- using namespace std;
