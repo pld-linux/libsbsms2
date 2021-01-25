@@ -8,16 +8,16 @@
 Summary:	C++ library for high quality time stretching and pitch scaling
 Summary(pl.UTF-8):	Biblioteka C++ do wysokiej jakości zmiany szybkości i wysokości dźwięku
 Name:		libsbsms2
-Version:	2.0.2
+Version:	2.1.0
 Release:	1
 License:	GPL v2
 Group:		Libraries
-Source0:	http://downloads.sourceforge.net/sbsms/libsbsms-%{version}.tar.gz
-# Source0-md5:	61e069486d58094a2350a1113d2ca10a
+Source0:	https://github.com/claytonotey/libsbsms/archive/%{version}.tar.gz
+# Source0-md5:	16750b6852ef1b2b43d179cf0d2a1603
 Patch0:		libsbsms-opts.patch
 Patch1:		libsbsms-gcc.patch
 Patch2:		libsbsms-link.patch
-URL:		http://sbsms.sourceforge.net/
+URL:		https://github.com/claytonotey/libsbsms
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1.5
 BuildRequires:	libmad-devel
@@ -94,7 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS README TODO
+%doc AUTHORS TODO
 %attr(755,root,root) %{_libdir}/libsbsms.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libsbsms.so.0
 
