@@ -12,6 +12,9 @@ Version:	2.1.0
 Release:	1
 License:	GPL v2
 Group:		Libraries
+#Source0Download: https://github.com/claytonotey/releases
+# TODO: for future versions use:
+#Source0:	https://github.com/claytonotey/libsbsms/archive/%{version}/libsbsms-%{version}.tar.gz
 Source0:	https://github.com/claytonotey/libsbsms/archive/%{version}.tar.gz
 # Source0-md5:	16750b6852ef1b2b43d179cf0d2a1603
 Patch0:		libsbsms-opts.patch
@@ -94,7 +97,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS TODO
+%doc AUTHORS README.md TODO
 %attr(755,root,root) %{_libdir}/libsbsms.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libsbsms.so.0
 
