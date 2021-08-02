@@ -1,0 +1,10 @@
+--- libsbsms-2.3.0/src/sms.cpp~	2021-08-01 21:45:00.000000000 +0000
++++ libsbsms-2.3.0/src/sms.cpp	2021-08-02 22:58:31.606803727 +0000
+@@ -4,6 +4,7 @@
+ #include "dBTable.h"
+ #include <stdlib.h>
+ #include <math.h>
++#include <pthread.h>
+ #include <set>
+ using namespace std;
+ 

@@ -1,10 +1,10 @@
---- libsbsms-2.0.2/src/Makefile.am.orig	2015-10-17 11:02:58.514398687 +0200
-+++ libsbsms-2.0.2/src/Makefile.am	2015-10-17 11:03:59.017730759 +0200
+--- libsbsms-2.3.0/src/Makefile.am~	2021-08-01 21:45:00.000000000 +0000
++++ libsbsms-2.3.0/src/Makefile.am	2021-08-02 22:50:06.902343103 +0000
 @@ -4,6 +4,7 @@
  libsbsmsinclude_HEADERS = ../include/sbsms.h
  
  lib_LTLIBRARIES = libsbsms.la
 +libsbsms_la_LIBADD = -lpthread
+ libsbsms_la_LDFLAGS = -no-undefined
  libsbsms_la_SOURCES = \
  	sms.cpp \
- 	track.cpp \
